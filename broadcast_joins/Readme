@@ -1,0 +1,3 @@
+This Program explain the concept of Braodcasting for Efficient Joins
+When you join a very large DataFrame (Fact Table) with a very small DataFrame (Dimension Table), Spark can use a technique called Broadcast Hash Join. 
+It sends the entire small DataFrame to all the worker nodes where the large DataFrame resides, avoiding a costly shuffle of the large DataFrame.
